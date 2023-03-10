@@ -1,0 +1,149 @@
+body {
+    text-align: center;
+    background-color: beige;
+}
+
+
+h1 {
+    font-family: 'Secular One', sans-serif;
+    font-weight: bold;
+    font-size: 3.5vw;
+    color: #ff7433;
+    letter-spacing: 0.3vw;
+}
+
+
+#container {
+    position: relative;
+    background-color: #ececec;
+    width: 27.1vw;
+    height: 43vw;
+    margin: auto;
+    border-radius: 1vw;
+    margin-top: 0;
+}
+
+#result-display {
+    position: absolute;
+    width: 24vw;
+    height: 15vw;
+    margin: 2vw 1vw 1vw 1.5vw;
+    border-bottom: 1px lightgray;
+    border-bottom-style: solid;
+
+}
+
+#top-row {
+    width: 24vw;
+    height: 7.5vw;
+}
+
+#bottom-row {
+    width: 24vw;
+    height: 7.5vw
+}
+
+#functionality {
+    position: absolute;
+    width: 26vw;
+    height: 25.7vw;
+    margin-top: 17.1vw;
+    margin-left: 0.5vw;
+}
+
+.text {
+    text-align: right;
+    font-size:4vw;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-text {
+    margin-bottom: 7vw;
+}
+span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.btn {
+    padding: 1.56vw 2.29vw 1.54vw 2.64vw;
+    margin-left: 0.15vw;
+    background-color: inherit;
+    border: none;
+}
+
+.btn-color-burning-orange {
+    color: #ff7433
+}
+
+.btn-bgcolor-burning-orange {
+    background-color: #ff7433
+}
+
+.btn-text {
+    font-size: 1.24vw;
+    font-weight: bold;
+}
+
+.btn-disabled {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px){
+    #container {
+        position: relative;
+        background-color: #ececec;
+        width: 86.1vw;
+        height: 90vw;
+        margin: auto;
+        border-radius: 1vw;
+        margin-top: 0;
+    }
+    #result-display {
+        position: absolute;
+        width: 81vw;
+        height: 33vw;
+        margin: 2vw 2vw 2vw 2vw;
+        border-bottom: 1px lightgray;
+        border-bottom-style: solid;
+    }
+    #functionality {
+        position: absolute;
+        width: 85.4vw;
+        height: 55vw;
+        margin-top: 35.1vw;
+        margin-left: 0.2vw;
+    }
+
+    h1 {
+        font-family: 'Secular-One', sans-serif;
+        font-weight: bold;
+        font-size: 11.5vw;
+        color: #ff7433;
+        letter-spacing: 0.45vw;
+    }
+
+    .btn {
+        padding: 2.8vw 8.56vw 2.8vw 8.56vw;
+        margin-left: 0.15vw;
+        background-color: inherit;
+        border: none;
+    }
+
+    .btn-text {
+        font-size: 3.24vw;
+        font-weight: bold;
+    }
+
+    .btn-bgcolor-burning-orange {
+        background-color: #ff7433
+    }
+
+    .ico {
+        size: 0.1vw;
+    }
+}
+
+
+
