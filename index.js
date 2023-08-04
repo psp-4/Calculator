@@ -57,10 +57,36 @@ keys.addEventListener("click",e =>{
 
 // To display in top-row
 function displayInTop(string){
-    document.querySelector("#top-field").textContent = string;
+    if (string.length>=14) {
+        document.querySelector("#top-field").classList.add("more-small-text");
+        document.querySelector("#top-field").textContent = string;
+    }
+    else if(string.length>=10){
+        document.querySelector("#top-field").classList.remove("more-small-text");
+        document.querySelector("#top-field").classList.add("small-text");
+        document.querySelector("#top-field").textContent = string;
+    }
+    else{
+        document.querySelector("#top-field").textContent = string;
+        document.querySelector("#top-field").classList.remove("small-text");
+
+    }
 }
 // To display in bottom-row
 function displayInBottom(string){
-    document.querySelector("#bottom-field").textContent = string;
+    if (string.length>=14) {
+        document.querySelector("#bottom-field").classList.add("more-small-text");
+        document.querySelector("#bottom-field").textContent = string;
+    }
+    else if(string.length>=10){
+        document.querySelector("#bottom-field").classList.remove("more-small-text");
+        document.querySelector("#bottom-field").classList.add("small-text");
+        document.querySelector("#bottom-field").textContent = string;
+    }
+    else{
+        document.querySelector("#bottom-field").textContent = string;
+        document.querySelector("#bottom-field").classList.remove("small-text");
+
+    }
 }
 
