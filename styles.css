@@ -1,18 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
 body {
     width: 100vw;
     height: 100vh;
     text-align: center;
-    background-color: beige;
+    background-image: url(images/background.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
     overflow: hidden;
 }
 
 
 h1 {
-    font-family: 'Secular One', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     font-weight: bold;
-    font-size: 3.5vw;
-    color: #ff7433;
-    letter-spacing: 0.3vw;
+    font-size: 3.6vw;
+    color: white;
+    letter-spacing: 0.5vw;
+    display: inline-block;
 }
 
 
@@ -23,7 +28,9 @@ h1 {
     height: 42vw;
     margin: auto;
     border-radius: 1vw;
-    margin-top: 0;
+    margin-top: -5px;
+    box-shadow: 3px 30px 80px black;
+    display: inline-block;
 }
 
 #result-display {
@@ -75,20 +82,34 @@ span {
     padding: 1.56vw 2.29vw 1.40vw 2.64vw;
     margin-left: 0.15vw;
     background-color: inherit;
-    border: none;
+    border:none;
 }
 
-.btn-color-burning-orange {
-    color: #ff7433
+.btn-color-green {
+    color: #01472F;
 }
 
-.btn-bgcolor-burning-orange {
-    background-color: #ff7433
+.btn-bgcolor-green {
+    background-color: #01472F;
 }
 
 .btn-text {
     font-size: 1.24vw;
     font-weight: bold;
+}
+
+.btn-text-green {
+    color: #01472F;
+}
+
+.equal-btn-text {
+    font-size: 1.27vw;
+    padding-right: 37px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0.9vw;
+    border-top-left-radius: 0;
+    color: white;
 }
 
 .btn-disabled {

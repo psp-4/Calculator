@@ -18,7 +18,7 @@ keys.addEventListener("click",e =>{
             displayInTop(displayedNum+="*");
         }
         else if (action === "divide"){
-            displayInTop(displayedNum+="÷");
+            displayInTop(displayedNum+="/");
         }
         else if (action === "add"){
             displayInTop(displayedNum+="+");
@@ -32,6 +32,9 @@ keys.addEventListener("click",e =>{
         }
         else if (action === "decimal"){
             displayInTop(displayedNum+=".");
+        }
+        else if (action === "percent"){
+            
         }
         else if (action === "equal"){
             var result=eval(displayedNum);
@@ -47,11 +50,6 @@ keys.addEventListener("click",e =>{
             var strlen = displayedNum.length;
             displayInTop(displayedNum.substring(0,strlen-1));
         }
-    //     else if (action ==="percent"){
-    //         var strlen = displayedNum.length;
-    //         displayInTop(displayedNum.substring(0,strlen-1));
-    //     }
-    // 
     }
 })
 
