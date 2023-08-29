@@ -2,22 +2,20 @@
 
 body {
     width: 100%;
-    height: 100%;
     text-align: center;
     background-image: url(images/background.jpg);
     background-size: 100%;
     background-attachment: fixed;
     overflow: hidden;
-    zoom: 100%;
 }
 
 
 h1 {
     font-family: 'Fira Sans', sans-serif;
     font-weight: bold;
-    font-size: 3.6vw;
+    font-size: 2.9em;
     color: white;
-    letter-spacing: 0.5vw;
+    letter-spacing: 0.15em;
     display: inline-block;
 }
 
@@ -25,10 +23,10 @@ h1 {
 #container {
     position: relative;
     background-color: #ececec;
-    width: 27.1vw;
-    height: 42vw;
+    width: 20.7em;
+    height: 32.3em;
     margin: auto;
-    border-radius: 1vw;
+    border-radius: 10px;
     margin-top: -5px;
     box-shadow: 3px 30px 80px black;
     display: inline-block;
@@ -36,42 +34,45 @@ h1 {
 
 #result-display {
     position: absolute;
-    width: 24vw;
-    height: 15vw;
-    margin: 2vw 1vw 1vw 1.5vw;
+    width: 18.5em;
+    height: 11.1em;
+    margin: 1.5em 0.8em 1.5em 1.2em;
     border-bottom: 1px lightgray;
     border-bottom-style: solid;
-
 }
 
 #top-row {
-    width: 24vw;
-    height: 7.5vw;
-    overflow-x: auto;
+    top: 5em;
+    width: 18.5em;
+    height: 5.5em;
+    position: absolute;
+    margin-top: 2px;
 }
 
 #bottom-row {
-    width: 24vw;
-    height: 7.5vw;
-    overflow-x: hidden;
+    top: 5em;
+    width: 18.5em;
+    height: 5.5em;
+    position: absolute;
+    margin-top: 2px;
 }
 
 #functionality {
     position: absolute;
-    width: 26vw;
-    height: 25.7vw;
-    margin-top: 17.1vw;
-    margin-left: 0.5vw;
+    width: 26em;
+    height: 25.7em;
+    margin-top: 13.1em;
+    margin-left: 0.35em;
 }
 
 .text {
     text-align: right;
-    font-size:4vw;
+    font-size:3.5em;
     font-family: 'Roboto', sans-serif;
 }
 
 .top-text {
-    margin-bottom: 7vw;
+    margin-bottom: 1.5em;
 }
 span {
     position: absolute;
@@ -80,10 +81,9 @@ span {
 }
 
 .btn {
-    padding: 1.56vw 2.29vw 1.40vw 2.64vw;
-    margin-left: 0.15vw;
+    padding: 1.43em 2.35em 1.43em 2.35em;
     background-color: inherit;
-    border:none;
+    border: none;
 }
 
 .btn-color-green {
@@ -95,7 +95,7 @@ span {
 }
 
 .btn-text {
-    font-size: 1.24vw;
+    font-size: 0.8em;
     font-weight: bold;
 }
 
@@ -104,11 +104,11 @@ span {
 }
 
 .equal-btn-text {
-    font-size: 1.27vw;
+    font-size: 1em;
     padding-right: 37px;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0.9vw;
+    border-bottom-right-radius: 10px;
     border-top-left-radius: 0;
     color: white;
 }
@@ -118,66 +118,12 @@ span {
 }
 
 .small-text {
-    font-size:3vw;
+    transform: scale(0.75);
+    transform-origin: right;
 }
 .more-small-text {
-    font-size:2vw;
+    transform: scale(0.5);
+    transform-origin: right;
 }
-
-@media only screen and (max-width: 1000px){
-    #container {
-        position: relative;
-        background-color: #ececec;
-        width: 86.1vw;
-        height: 90vw;
-        margin: auto;
-        border-radius: 1vw;
-        margin-top: 0;
-    }
-    #result-display {
-        position: absolute;
-        width: 81vw;
-        height: 33vw;
-        margin: 2vw 2vw 2vw 2vw;
-        border-bottom: 1px lightgray;
-        border-bottom-style: solid;
-    }
-    #functionality {
-        position: absolute;
-        width: 85.4vw;
-        height: 55vw;
-        margin-top: 35.1vw;
-        margin-left: 0.2vw;
-    }
-
-    h1 {
-        font-family: 'Secular-One', sans-serif;
-        font-weight: bold;
-        font-size: 11.5vw;
-        color: #ff7433;
-        letter-spacing: 0.45vw;
-    }
-
-    .btn {
-        padding: 2.8vw 8.56vw 2.8vw 8.56vw;
-        margin-left: 0.15vw;
-        background-color: inherit;
-        border: none;
-    }
-
-    .btn-text {
-        font-size: 3.24vw;
-        font-weight: bold;
-    }
-
-    .btn-bgcolor-burning-orange {
-        background-color: #ff7433
-    }
-
-    .ico {
-        size: 0.1vw;
-    }
-}
-
 
 

@@ -27,6 +27,8 @@ keys.addEventListener("click",e =>{
             displayInTop(displayedNum+="-");
         } 
         else if (action === "all-clear"){
+            document.querySelector("#top-field").classList.remove("more-small-text");
+            document.querySelector("#top-field").classList.remove("small-text");
             displayInTop("");
             displayInBottom("0");
         }
@@ -55,36 +57,36 @@ keys.addEventListener("click",e =>{
 
 // To display in top-row
 function displayInTop(string){
-    if (string.length>=14) {
+    if (string.length>12) {
         document.querySelector("#top-field").classList.add("more-small-text");
         document.querySelector("#top-field").textContent = string;
     }
-    else if(string.length>=10){
+    else if(string.length>9){
         document.querySelector("#top-field").classList.remove("more-small-text");
         document.querySelector("#top-field").classList.add("small-text");
         document.querySelector("#top-field").textContent = string;
     }
     else{
-        document.querySelector("#top-field").textContent = string;
+        document.querySelector("#bottom-field").classList.remove("more-small-text");
         document.querySelector("#top-field").classList.remove("small-text");
-
+        document.querySelector("#top-field").textContent = string;
     }
 }
 // To display in bottom-row
 function displayInBottom(string){
-    if (string.length>=14) {
+    if (string.length>12) {
         document.querySelector("#bottom-field").classList.add("more-small-text");
         document.querySelector("#bottom-field").textContent = string;
     }
-    else if(string.length>=10){
+    else if(string.length>9){
         document.querySelector("#bottom-field").classList.remove("more-small-text");
         document.querySelector("#bottom-field").classList.add("small-text");
         document.querySelector("#bottom-field").textContent = string;
     }
     else{
-        document.querySelector("#bottom-field").textContent = string;
+        document.querySelector("#bottom-field").classList.remove("more-small-text");
         document.querySelector("#bottom-field").classList.remove("small-text");
-
+        document.querySelector("#bottom-field").textContent = string;
     }
 }
 
